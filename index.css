@@ -1,5 +1,5 @@
 h1 {
-color:blue;
+color:rgb(220, 220, 227);
 
 }
 
@@ -9,3 +9,31 @@ body {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 /* classes */
 
 .responses{font-family:Verdana, Geneva, Tahoma, sans-serif}
+
+/* treatment #1 */
+.scaled img {
+    width: 700px;
+    margin-left: 0%;
+    margin-top: 0px;
+}
+
+/* treatment #2 */
+.tiled {
+    background-image: url('20230808_154444.jpg');
+    background-repeat: repeat;
+    background-size: 45px;
+
+    min-height: 500px;
+    padding: 20px;
+}
+
+/* treatment #3 */
+.brightened img {
+  width: 300px;
+  filter: brightness(250%) contrast(100%) saturate(2000%);
+  mix-blend-mode:multiply(50%);
+}
+
+body {
+  background-color: rgb(28, 90, 161);
+}
