@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-color:rgb(8, 8, 8);
+    color: rgb(8, 8, 8);
 }
 
 
@@ -16,17 +16,18 @@ sub {
 }
 
 
-p {font-family:'Times New Roman', Times, Arial, sans-serif;
+p {
+    font-family: 'Times New Roman', Times, Arial, sans-serif; font-weight: bold;
 }
 
 p.thick {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /* classes */
 
 .responses {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;color: aliceblue;
 }
 
 /* treatment #1 */
@@ -118,4 +119,31 @@ img {
 
 /*! above code was effective but not what I liked  */
 
-.shrink_image {max-width: 0.002%;max-height: 0.002%;}
+.shrink_image {
+    max-width: 0.002%;
+    max-height: 0.002%;
+}
+
+/* 
+img {
+  width: 900px;
+  height: 50px;
+  object-fit: cover;
+  object-position: 80% 20%; /* Panned to a specific fragment
+} */
+
+/* !code below is not working */
+img1 {
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 80% 20%; /* Panned to a specific fragment */
+}
+
+/* !div (like a section of code) */
+/* this element is written within the div, so it inherits the div's class */
+
+.words{
+background-color: aliceblue;
+
+}
