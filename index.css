@@ -2,9 +2,6 @@ body {
     background-color: rgb(231, 226, 226)
 }
 
-
-
-
 h1 {
 color:rgb(8, 8, 8);
 }
@@ -19,20 +16,11 @@ sub {
 }
 
 
-p {
-    font-family: 'Times New Roman', Times, serif, Arial, sans-serif
+p {font-family:'Times New Roman', Times, Arial, sans-serif;
 }
-
-;
 
 p.thick {
-    font-weight: bold;
-}
-
-p {
-    p.thick {
-        font-weight: bold;
-    }
+  font-weight: bold;
 }
 
 /* classes */
@@ -69,19 +57,19 @@ body {
     background-color: rgb(28, 90, 161);
 }
 
-.fragmented {}
+/* .fragmented {} */
 
 /* 
 @keyframes mymove {
   from {background-color: red;}
   to {background-color: blue;}
 } */
-<style>#myDIV {
+/* <style>#myDIV {
     width: 300px;
     height: 200px;
     background: red;
     animation: mymove 5s infinite;
-}
+} */
 
 /* 
 @keyframes mymove {
@@ -118,3 +106,16 @@ body {
     bottom: 0;
     left: 200px;
 }
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+/* 
+img {
+  float: right;
+} */
+
+/*! above code was effective but not what I liked  */
+
+.shrink_image {max-width: 0.002%;max-height: 0.002%;}
