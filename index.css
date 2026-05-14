@@ -1,7 +1,7 @@
 body {
     background-color: rgb(231, 226, 226);
 
-     /* background: url(20230808_154444.jpg); */
+     background: url(20230808_154444.jpg);
 
 }
 
@@ -18,8 +18,7 @@ sub {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-
-p {
+ p {
     font-family: 'Times New Roman', Times, Arial, sans-serif; font-weight: bold;
 }
 
@@ -81,14 +80,14 @@ p.thick {
 </style> */
 
 
-/* .out {
+.out {
   width: 455px;
   height: 275px;
   border: 1px solid red;
   position: relative;
   overflow: hidden;
   margin: 20px;
-} */
+}
 
 .in {
     width: 550px;
@@ -98,19 +97,16 @@ p.thick {
     left: 200px;
     border-radius: 50%;
     box-shadow: 0 0 0 500px rgba(226, 21, 21, 0.586);
-    /* this is the white background */
 }
 
 .bottom .in {
     bottom: 0;
     left: 200px;
 }
-
-/* html {
+ /* html {
   scroll-behavior: smooth;
-} */
+} */ */
 
-/* 
 img {
   float: right;
 } */
@@ -120,28 +116,45 @@ img {
 .shrink_image {
     max-width: 0.002%;
     max-height: 0.002%;
-}
+} 
 
-/* 
-img {
+.img {
   width: 900px;
   height: 50px;
   object-fit: cover;
-  object-position: 80% 20%; /* Panned to a specific fragment
-} */
+  object-position: 80% 20%;
+}
 
 /* !code below is not working */
 .img1 {
   width: 100px;
   height: 200px;
   object-fit: cover;
-  object-position: 80% 20%; /* Panned to a specific fragment */
+  object-position: 80% 20%;
 }
-
+ /* Panned to a specific fragment */
 /* !div (like a section of code) */
-/* this element is written within the div, so it inherits the div's class */
+this element is written within the div, so it inherits the div's class
 
 .words{
 background-color: aliceblue;
 
 }
+.treatment3 {
+  width: 100px;
+  height: 200px;
+  max-width: 0.002%;
+  max-height: 0.002%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
