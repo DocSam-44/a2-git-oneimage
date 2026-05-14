@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(231, 226, 226)
+    background-color: rgb(231, 226, 226);
+
+     /* background: url(20230808_154444.jpg); */
+
 }
 
 h1 {
@@ -54,9 +57,7 @@ p.thick {
     mix-blend-mode: multiply(50%);
 }
 
-body {
-    background-color: rgb(28, 90, 161);
-}
+
 
 /* .fragmented {} */
 
@@ -79,9 +80,6 @@ body {
 }
 </style> */
 
-body {
-    background: url(20230808_154444.jpg);
-}
 
 /* .out {
   width: 455px;
@@ -133,7 +131,7 @@ img {
 } */
 
 /* !code below is not working */
-img1 {
+.img1 {
   width: 100px;
   height: 200px;
   object-fit: cover;
