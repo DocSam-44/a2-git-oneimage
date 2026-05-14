@@ -1,14 +1,45 @@
-h1 {
-color:rgb(220, 220, 227);
-
+body {
+    background-color: rgb(231, 226, 226)
 }
 
 
-body {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+
+
+h1 {
+color:rgb(8, 8, 8);
+}
+
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+sub {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+p {
+    font-family: 'Times New Roman', Times, serif, Arial, sans-serif
+}
+
+;
+
+p.thick {
+    font-weight: bold;
+}
+
+p {
+    p.thick {
+        font-weight: bold;
+    }
+}
 
 /* classes */
 
-.responses{font-family:Verdana, Geneva, Tahoma, sans-serif}
+.responses {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 
 /* treatment #1 */
 .scaled img {
@@ -29,11 +60,61 @@ body {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 
 /* treatment #3 */
 .brightened img {
-  width: 300px;
-  filter: brightness(250%) contrast(100%) saturate(2000%);
-  mix-blend-mode:multiply(50%);
+    width: 300px;
+    filter: brightness(250%) contrast(100%) saturate(2000%);
+    mix-blend-mode: multiply(50%);
 }
 
 body {
-  background-color: rgb(28, 90, 161);
+    background-color: rgb(28, 90, 161);
+}
+
+.fragmented {}
+
+/* 
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+} */
+<style>#myDIV {
+    width: 300px;
+    height: 200px;
+    background: red;
+    animation: mymove 5s infinite;
+}
+
+/* 
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+</style> */
+
+body {
+    background: url(20230808_154444.jpg);
+}
+
+/* .out {
+  width: 455px;
+  height: 275px;
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+} */
+
+.in {
+    width: 550px;
+    height: 30000px;
+    border: 1px solid green;
+    position: absolute;
+    left: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 500px rgba(226, 21, 21, 0.586);
+    /* this is the white background */
+}
+
+.bottom .in {
+    bottom: 0;
+    left: 200px;
 }
