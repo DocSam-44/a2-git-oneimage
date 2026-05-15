@@ -163,6 +163,7 @@ background-color: aliceblue;
   /* Other styles for your container */
 }
 /* *this has rotated the background image */
+/* container"" mandatory for invisiable pseudo element */
 .container::before {
   content: "";
   position: absolute;
@@ -174,5 +175,19 @@ background-color: aliceblue;
   background-image: url('20230808_154444.jpg');
   background-size: cover;
   /* Apply your transformation here */
-  transform: rotate(10deg) scale(1.2);
+  /* transform: rotate(70deg) scale(1.2); */
+  transform: matrix(1.299, 0.95, -0.35, 1.299, 5, 0);
+  /* matrix allows me to use multiple transformations with a single line of code */
+  filter: brightness(0.7);
+
+}
+
+.noir{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+/* by adding this to the picture on the right, I was able to have both pictures be acted on by a class and brough forward without any real change since grayscale is set to 0% */
+.blanc{
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
 }
