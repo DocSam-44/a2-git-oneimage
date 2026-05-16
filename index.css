@@ -3,61 +3,63 @@
 } */
 
 h1 {
-    color: rgb(8, 8, 8);
+  color: rgb(8, 8, 8);
 }
 
 
 h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 sub {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 
 p {
-    font-family: 'Times New Roman', Times, Arial, sans-serif; font-weight: bold;
+  font-family: 'Times New Roman', Times, Arial, sans-serif;
+  font-weight: bold;
 }
 
 p.thick {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* classes */
 
 .responses {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
 }
 
 /* treatment #1 */
 .scaled img {
-    width: 700px;
-    margin-left: 0%;
-    margin-top: 0px;
+  width: 700px;
+  margin-left: 0%;
+  margin-top: 0px;
 }
 
 /* treatment #2 */
 .tiled {
-    background-image: url('20230808_154444.jpg');
-    background-repeat: repeat;
-    background-size: 45px;
+  background-image: url('20230808_154444.jpg');
+  background-repeat: repeat;
+  background-size: 45px;
 
-    min-height: 500px;
-    padding: 20px;
+  min-height: 500px;
+  padding: 20px;
 }
 
 /* treatment #3 */
 .brightened img {
-    width: 300px;
-    filter: brightness(250%) contrast(100%) saturate(2000%);
-    mix-blend-mode: multiply(50%);
+  width: 300px;
+  filter: brightness(250%) contrast(100%) saturate(2000%);
+  mix-blend-mode: multiply(50%);
 }
 
-body {
-    background-color: rgb(28, 90, 161);
-}
-
+/* body {
+    background-color: rgb(200, 200, 52);
+} */
+/**no longer need the above code because the media querry cover it */
 /* .fragmented {} */
 
 /* 
@@ -93,19 +95,19 @@ body {
 } */
 
 .in {
-    width: 550px;
-    height: 30000px;
-    border: 1px solid green;
-    position: absolute;
-    left: 200px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 500px rgba(226, 21, 21, 0.586);
-    /* this is the white background */
+  width: 550px;
+  height: 30000px;
+  border: 1px solid green;
+  position: absolute;
+  left: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 500px rgba(226, 21, 21, 0.586);
+  /* this is the white background */
 }
 
 .bottom .in {
-    bottom: 0;
-    left: 200px;
+  bottom: 0;
+  left: 200px;
 }
 
 /* html {
@@ -120,8 +122,8 @@ img {
 /*! above code was effective but not what I liked  */
 
 .shrink_image {
-    max-width: 0.002%;
-    max-height: 0.002%;
+  max-width: 0.002%;
+  max-height: 0.002%;
 }
 
 /* 
@@ -137,14 +139,15 @@ img1 {
   width: 100px;
   height: 200px;
   object-fit: cover;
-  object-position: 80% 20%; /* Panned to a specific fragment */
+  object-position: 80% 20%;
+  /* Panned to a specific fragment */
 }
 
 /* !div (like a section of code) */
 /* this element is written within the div, so it inherits the div's class */
 
-.words{
-background-color: rgb(155, 172, 186);
+.words {
+  background-color: rgb(155, 172, 186);
 
 }
 
@@ -162,6 +165,7 @@ background-color: rgb(155, 172, 186);
   overflow: hidden;
   /* Other styles for your container */
 }
+
 /* *this has rotated the background image */
 /* container"" mandatory for invisiable pseudo element */
 .container::before {
@@ -182,23 +186,28 @@ background-color: rgb(155, 172, 186);
 
 }
 
-.noir{
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);  max-width: 100%;
+.noir {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  max-width: 100%;
   height: auto;
 }
+
 /* by adding this to the picture on the right, I was able to have both pictures be acted on by a class and brough forward without any real change since grayscale is set to 0% */
-.blanc{
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+.blanc {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
   max-width: 100%;
-  height: auto;}
+  height: auto;
+}
 
 
 
 
 /* .overlay{position: relative; Essential: keeps text inside this box */
-  /* text-align: center;
+/* text-align: center;
   color: white;} */
 
 
@@ -206,31 +215,51 @@ background-color: rgb(155, 172, 186);
   position: absolute;
   top: 50%;           
   Move to vertical center */
-  /* left: 50%;         
+/* left: 50%;         
    Move to horizontal center */
-  /* transform: translate(-50%, -50%); Perfectly center the text */
-  /* font-size: 24px;
+/* transform: translate(-50%, -50%); Perfectly center the text */
+/* font-size: 24px;
   font-weight: bold;
   text-shadow: 2px 2px 4px #000000; Makes text easier to read
    } */
-.box{
-  position: relative; /* Essential: keeps text inside this box */
+.box {
+  position: relative;
+  /* Essential: keeps text inside this box */
   text-align: center;
   color: rgb(12, 11, 11);
 }
 
 .overlay-text {
   position: absolute;
-  top: 50%;           /* Move to vertical center */
-  left: 50%;          /* Move to horizontal center */
-  transform: translate(-50%, -50%); /* Perfectly center the text */
+  top: 50%;
+  /* Move to vertical center */
+  left: 50%;
+  /* Move to horizontal center */
+  transform: translate(-50%, -50%);
+  /* Perfectly center the text */
   font-size: 24px;
   font-weight: bold;
-  text-shadow: 2px 2px 4px #000000; /* Makes text easier to read */
+  text-shadow: 2px 2px 4px #000000;
+  /* Makes text easier to read */
 }
 
-.bigword{
-font-size:200px;
-opacity: 0.7; /* 50% transparent */
+.bigword {
+  font-size: 200px;
+  opacity: 0.7;
+  /* 50% transparent */
 
+}
+
+/* Default styles (Mobile) */
+body {
+  background-color: rgb(120, 61, 176);
+  font-size: 14px;
+}
+
+/* Tablet and Desktop (at least 768px wide) */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgb(35, 85, 156);
+    font-size: 18px;
+  }
 }
