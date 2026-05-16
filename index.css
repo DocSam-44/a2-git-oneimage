@@ -177,17 +177,54 @@ background-color: aliceblue;
   /* Apply your transformation here */
   /* transform: rotate(70deg) scale(1.2); */
   transform: matrix(1.299, 0.95, -0.35, 1.299, 5, 0);
-  /* matrix allows me to use multiple transformations with a single line of code */
+  /* !matrix allows me to use multiple transformations with a single line of code so while it might look like one property, there is 5/6 + filter to equal 6/7 properties*/
   filter: brightness(0.7);
 
 }
 
 .noir{
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  filter: grayscale(100%);  max-width: 100%;
+  height: auto;
 }
 /* by adding this to the picture on the right, I was able to have both pictures be acted on by a class and brough forward without any real change since grayscale is set to 0% */
 .blanc{
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
+  max-width: 100%;
+  height: auto;}
+
+
+
+
+/* .overlay{position: relative; Essential: keeps text inside this box */
+  /* text-align: center;
+  color: white;} */
+
+
+/* .boxedup{
+  position: absolute;
+  top: 50%;           
+  Move to vertical center */
+  /* left: 50%;         
+   Move to horizontal center */
+  /* transform: translate(-50%, -50%); Perfectly center the text */
+  /* font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000; Makes text easier to read
+   } */
+.box{
+  position: relative; /* Essential: keeps text inside this box */
+  text-align: center;
+  color: rgb(12, 11, 11);
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;           /* Move to vertical center */
+  left: 50%;          /* Move to horizontal center */
+  transform: translate(-50%, -50%); /* Perfectly center the text */
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000; /* Makes text easier to read */
 }
