@@ -30,7 +30,7 @@ p.thick {
 }
 
 /* classes */
-
+/*!the below code allowed me to specify a different font specificallly for the website/assignment title and the subheading label with my name */
 .responses {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: aliceblue;
@@ -43,7 +43,7 @@ p.thick {
   margin-top: 0px;
 } */
 
-/* treatment #2 */
+/*!tiled is the class name I assigned to version 3s effects. It includes the tile effect, size adjustment of individual images, size adjustment of the width the tile collection can take up on the website */
 .tiled {
   background-image: url('20230808_154444.jpg');
   background-repeat: repeat;
@@ -53,7 +53,7 @@ p.thick {
   padding: 20px;
 }
 
-/* treatment #3 */
+/*! the below code is the effects applied to version 4. it contains a filter to adjust brighness, ctrast, and saturate. I have also altered the scale by changing the width and I also used mix-blend-mode to highten the effects of the filter as they worked well together */
 .brightened img {
   width: 300px;
   filter: brightness(250%) contrast(100%) saturate(2000%);
