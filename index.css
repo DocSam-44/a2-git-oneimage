@@ -14,10 +14,14 @@ h1 {
 }
 
 /* *the below code alters the colour of all subheadings in the html file to have the applied font family */
-sub {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
 
+#responses1{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#responses1
+ {
+    font-size: 15px;
+}
 /* *the below code alters the colour of all paragraphs in the html file to have the applied font family */
 p {
   font-family: 'Times New Roman', Times, Arial, sans-serif;
