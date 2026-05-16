@@ -144,7 +144,7 @@ img1 {
 /* this element is written within the div, so it inherits the div's class */
 
 .words{
-background-color: aliceblue;
+background-color: rgb(155, 172, 186);
 
 }
 
@@ -231,8 +231,6 @@ background-color: aliceblue;
 
 .bigword{
 font-size:200px;
-
 opacity: 0.7; /* 50% transparent */
-
 
 }
