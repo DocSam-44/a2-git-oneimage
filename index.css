@@ -13,11 +13,7 @@ h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-<<<<<<< HEAD
-/* *the below code alters the colour of all subheadings in the html file to have the applied font family */
-=======
-/* *the below code alters the fontand size of one subheading in the html file to have the applied font family */
->>>>>>> trying_to_add_main
+/* *the below code alters the font and size of one subheading in the html file to have the applied font family */
 
 #responses1{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
